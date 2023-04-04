@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+html {
+  --Primary-Soft-blue: hsl(215, 51%, 70%);
+  --Primary-Cyan: hsl(178, 100%, 50%);
+  --Neutral-main-bg: hsl(217, 54%, 11%);
+  --Neutral-card-bg: hsl(216, 50%, 16%);
+  --Neutral-line: hsl(215, 32%, 27%);
+  --Neutral-white: hsl(0, 0%, 100%);
+}
+body {
+  max-width: 1440px;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: var(--Neutral-main-bg);
+  color: var(--Neutral-white);
+}
+.inner {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  width: 400px;
+  padding: 20px 8px;
+  background-color: var(--Neutral-card-bg);
+  border-radius: 14px;
+}
+.card img {
+  width: 360px;
+  height: 380px;
+  display: block;
+  margin: auto;
+  border-radius: 14px;
+}
+.card .text {
+  margin-top: 20px;
+  margin-left: 16px;
+  width: 380px;
+}
+.card .text figcaption {
+  font-size: 24px;
+}
+.card .text .description {
+  color: var(--Primary-Soft-blue);
+  font-weight: 300;
+}
+.card .text .price {
+  color: var(--Primary-Cyan);
+  position: relative;
+  margin-left: 16px;
+  margin-right: 180px;
+  padding: 5px 0;
+}
+.card .text .price::before {
+  content: "  ";
+  background-image: url("./images/icon-ethereum.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -14px;
+  bottom: 1px;
+}
+.card .text .day {
+  position: relative;
+  color: var(--Primary-Soft-blue);
+}
+.card .text .day::before {
+  content: "  ";
+  background-image: url("./images/icon-clock.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -22px;
+  bottom: -5px;
+}
+.avatar {
+  margin-left: 16px;
+  font-weight: 300;
+}
+.avatar span {
+  color: var(--Primary-Soft-blue);
+  font-weight: 300;
+}
+.avatar-img {
+  background-image: url("./images/image-avatar.png");
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 34px;
+  background-size: contain;
+  border: 1px solid var(--Neutral-white);
+  border-radius: 50%;
+}
+.avatar-box {
+  margin-top: 18px;
+  border-top: 1px solid var(--Neutral-line);
+  display: flex;
+  align-items: center;
+}
